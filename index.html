@@ -4,80 +4,186 @@
   <title>The HTML5 Herald</title>
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-<style>
-.full-screen {
-  position: relative;
-}
-.programme-pavilion svg,
- .programme-pavilion img {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  top: 0px;
-}
-.programme-pavilion svg {
-  z-index: 100;
-}
-.btn {
-  border: 1px solid red;
-  padding: 2px;
-}
+  <style>
+  /* რამე კონტეინერი, რომ x ღერძზე ოვერფლოვზე სქროლი არ გაიკეთოს*/
+  body {
+    overflow-x: hidden;
+    margin: 0px;
+  }
+  .programme-pavilion {
+    position: relative;
+    min-height: 100%;
+  }
+  .programme-pavilion svg,
+  .programme-pavilion img {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  .programme-pavilion svg {
+    z-index: 100;
+  }
+  rect.st0 {
+    stroke-width:1;
+    stroke:#2100ff;
+    fill: transparent;
+    transition: opacity .3s;
+  }
+  rect.st0:hover {
+    opacity: 1;
+  }
+  @media only screen and (max-width: 1400px) {
+    .programme-pavilion {
+      margin: -100px -100px 0 -100px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .programme-pavilion {
+      margin: -50px -70px 0 -70px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .programme-pavilion {
+      margin: -50px -50px 0 -50px;
+    }
+  }
 </style>
 </head>
 
 <body class="ka">
-  <div class="full-screen">
+  <!-- ეს რაც ჩანს ვებგვერდზე, პირობითად დავწერე -->
+  <div style="display: none">
+    <div clas="btn">click to enlarge</div>
+    <img src="Reflected-Pavilion.png" alt="Reflected Pavilion">
+  </div>
 
-<!-- ეს ყოველთვის 100% არის განში იმხელაა რამხელაც კონტეინერი -->
-    <div class="programme-pavilion">
-      <div clas="btn">click to enlarge</div>
-      <img src="Reflected-Pavilion.png" alt="Reflected Pavilion">
+
+  <!-- ეს popup, რა კონტეინერშიც ჩასვავ იმხელა იქნება -->
+  <div class="programme-pavilion">
+    <img src="Reflected-Pavilion.png" alt="Reflected Pavilion">
     <?xml version="1.0" encoding="utf-8"?>
     <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 viewBox="0 0 1003.7 702" style="enable-background:new 0 0 1003.7 702;" xml:space="preserve">
+    viewBox="0 0 1003.7 702" style="enable-background:new 0 0 1003.7 702;" xml:space="preserve">
     <style type="text/css">
-    	.st0{fill:#2100FF;}
+    .st0{fill:#2100FF;opacity: 0;}
     </style>
-    <g id="clicks">
-      <a href="https://miesbcn.com/project/el-secreto-de-las-medusas/" target="_blank">
-    	<rect x="663.1" y="223.5" class="st0" width="19.4" height="19.4"/>
-      <a/>
-    	<rect x="774" y="334" class="st0" width="19.4" height="19.4"/>
-    	<rect x="800.1" y="389.5" class="st0" width="19.4" height="19.4"/>
-    	<rect x="696.5" y="334.2" class="st0" width="19.4" height="19.4"/>
-    	<rect x="713.9" y="388.4" class="st0" width="19.4" height="19.4"/>
-    	<rect x="713.9" y="416.1" class="st0" width="19.4" height="19.4"/>
-    	<rect x="713.9" y="445.1" class="st0" width="19.4" height="19.4"/>
-    	<rect x="664.2" y="390.4" class="st0" width="19.4" height="19.4"/>
-    	<rect x="664.2" y="415.1" class="st0" width="19.4" height="19.4"/>
-    	<rect x="664.2" y="445.1" class="st0" width="19.4" height="19.4"/>
-    	<rect x="605.8" y="447.1" class="st0" width="19.4" height="19.4"/>
-    	<rect x="605.8" y="410.2" class="st0" width="19.4" height="19.4"/>
-    	<rect x="605.8" y="333.6" class="st0" width="19.4" height="19.4"/>
-    	<rect x="585.3" y="369.2" class="st0" width="19.4" height="19.4"/>
-    	<rect x="522.9" y="369.2" class="st0" width="19.4" height="19.4"/>
-    	<rect x="522.9" y="446.7" class="st0" width="19.4" height="19.4"/>
-    	<rect x="522.9" y="493" class="st0" width="19.4" height="19.4"/>
-    	<rect x="393.1" y="493" class="st0" width="19.4" height="19.4"/>
-    	<rect x="463.6" y="446.6" class="st0" width="19.4" height="19.4"/>
-    	<rect x="434.2" y="369.1" class="st0" width="19.4" height="19.4"/>
-    	<rect x="438.2" y="409.3" class="st0" width="19.4" height="19.4"/>
-    	<rect x="432.4" y="309.8" class="st0" width="19.4" height="19.4"/>
-    	<rect x="314.9" y="309.8" class="st0" width="19.4" height="19.4"/>
-    	<rect x="314.9" y="368.8" class="st0" width="19.4" height="19.4"/>
-    	<rect x="376.4" y="368.8" class="st0" width="19.4" height="19.4"/>
-    	<rect x="314.2" y="446.8" class="st0" width="19.4" height="19.4"/>
-    	<rect x="204" y="491.1" class="st0" width="19.4" height="19.4"/>
-    	<rect x="195.9" y="588.7" class="st0" width="37.6" height="37.6"/>
-    	<rect x="522.6" y="614.2" class="st0" width="21" height="21"/>
-    	<rect x="522.6" y="674.1" class="st0" width="21" height="21"/>
-    	<rect x="195.9" y="650" class="st0" width="37.6" height="37.6"/>
-    	<rect x="204" y="367.2" class="st0" width="19.4" height="19.4"/>
-    </g>
-    </svg>
-</div>
+    <a href="https://miesbcn.com/project/el-secreto-de-las-medusas/" target="_blank">
+      <rect x="663.1" y="223.5" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/it-begins-with-one-word-choose-your-own-katarzyna-krakowiak-at-the-mies-van-der-rohe-pavilion-barcelona/" target="_blank">
+      <rect x="314.9" y="309.8" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/jordi-bernado-second-reconstruction/" target="_blank">
+      <rect x="432.4" y="309.8" class="st0" width="19.4" height="19.4"/>
+    </a>
 
-  </div>
-  </body>
-  </html>
+
+
+    <a href="https://miesbcn.com/project/1100-past-and-present-michael-wesely-2/" target="_blank">
+      <rect x="605.8" y="333.6" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/the-stadium-the-pavilion-and-the-palace-by-domenec/">
+      <rect x="696.5" y="334.2" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/woman-against-the-light/" target="_blank">
+      <rect x="774" y="334" class="st0" width="19.4" height="19.4"/>
+    </a>
+
+
+
+    <a href="https://miesbcn.com/project/dance-performance-by-toni-mira/" target="_blank">
+      <rect x="204" y="367.2" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/big-bang-building-light-mario-pasqualotto/" target="blank">
+      <rect x="314.9" y="368.8" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/santiago-borja-suprasensitive/" target="_blank">
+      <rect x="376.4" y="368.8" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/mies-missing-materiality/" target="_blank">
+      <rect x="434.2" y="369.1" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/spectral-diffractions-by-edwin-van-der-heide/" target="_blank">
+      <rect x="522.9" y="369.2" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/re-enactment-lilly-reichs-work-occupies-the-barcelona-pavilion-by-laura-martinez-de-guerenu/" target="_blank">
+      <rect x="585.3" y="369.2" class="st0" width="19.4" height="19.4"/>
+    </a>
+
+
+    <a href="https://miesbcn.com/project/folding-cosmos/" target="_blank">
+      <rect x="664.2" y="390.4" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/ghost-forest-by-francisco-lopez/" target="_blank">
+      <rect x="713.9" y="388.4" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/francesco-arena-lettura-in-3-parti-per-il-padiglione/" target="_blank">
+      <rect x="800.1" y="389.5" class="st0" width="19.4" height="19.4"/>
+    </a>
+
+
+    <a href="https://miesbcn.com/project/xavier-veilhan-architectones-barcelona-pavilion/" target="_blank">
+      <rect x="438.2" y="409.3" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/muntadas-on-translation-intervention/" target="_blank">
+      <rect x="605.8" y="410.2" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/bgw-tres-ignacio-uriarte/" target="_blank">
+      <rect x="664.2" y="415.1" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/the-simplest-thing-is-the-hardest-to-do-laercio-redondo-at-the-mies-van-der-rohe-pavilion/" target="_blank">
+      <rect x="713.9" y="416.1" class="st0" width="19.4" height="19.4"/>
+    </a>
+
+    <!-- -->
+    <a href="https://miesbcn.com/project/spencer-finch-fifteen-stones-ryoan-ji/" target="_blank">
+      <rect x="314.2" y="446.8" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/luftwerk-iker-gil-geometry-of-light/" target="_blank">
+      <rect x="463.6" y="446.6" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/alex-arteaga-transient-senses/" target="_blank">
+      <rect x="522.9" y="446.7" class="st0" width="19.4" height="19.4"/>
+    </a>
+
+    <a href="https://miesbcn.com/project/pavilion-by-karin-kneffel/" target="_blank">
+      <rect x="605.8" y="447.1" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/loop-festival-kasta-macka-klara-liden/">
+      <rect x="664.2" y="445.1" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/sanaa-intervention/" target="_blank">
+      <rect x="713.9" y="445.1" class="st0" width="19.4" height="19.4"/>
+    </a>
+
+    <a href="https://miesbcn.com/project/ai-weiwei-intervention/" target="_blank">
+      <rect x="204" y="491.1" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a  href="https://miesbcn.com/project/no-fear-of-glass-sabine-marcelis/" target="_blank">
+      <rect x="393.1" y="493" class="st0" width="19.4" height="19.4"/>
+    </a>
+    <a href="https://miesbcn.com/project/jaque-intervention/" target="_blank">
+      <rect x="522.9" y="493" class="st0" width="19.4" height="19.4"/>
+    </a>
+
+
+    <!-- bottom links -->
+    <a href="https://miesbcn.com/project/lilly-reich-grant-for-equality-in-architecture/" target="_blank">
+      <rect x="195.9" y="588.7" class="st0" width="37.6" height="37.6"/>
+    </a>
+    <a href="https://eumiesaward.com/" target="_blank">
+      <rect x="195.9" y="650" class="st0" width="37.6" height="37.6"/>
+    </a>
+    <a href="https://miesbcn.com/project/fear-of-columns-competition/" target="_blank">
+      <rect x="522.6" y="614.2" class="st0" width="21" height="21"/>
+    </a>
+    <a href="https://miesbcn.com/project/and-as-here-place-set-the-then-by-peter-downsbrough/" target="_blank">
+      <rect x="522.6" y="674.1" class="st0" width="21" height="21"/>
+    </a>
+  </svg>
+
+</div>
+</body>
+</html>
