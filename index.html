@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8">
   <title>The HTML5 Herald</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <style>
@@ -9,17 +10,23 @@
   body {
     overflow-x: hidden;
     margin: 0px;
+    position: relative;
   }
   .programme-pavilion {
     position: relative;
+    overflow-x: hidden;
     min-height: 100%;
+    width: 100%;
   }
-  .programme-pavilion svg,
-  .programme-pavilion img {
+  .programme-pavilion svg {
     position: absolute;
     width: 100%;
     left: 0px;
     top: 0px;
+  }
+  .programme-pavilion img {
+    width: 100%;
+    margin-bottom: 80px;
   }
   .programme-pavilion svg {
     z-index: 100;
@@ -33,19 +40,57 @@
   rect.st0:hover {
     opacity: 1;
   }
+  /*close*/
+  .close {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 200;
+    cursor: pointer;
+    transition: opacity .3s;
+  }
+  .close:hover {
+    opacity: 0.6;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 8px;
+    content: ' ';
+    height: 10px;
+    width: 1px;
+    background-color: #2100ff;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
   @media only screen and (max-width: 1400px) {
     .programme-pavilion {
       margin: -100px -100px 0 -100px;
+    }
+    .close {
+      left: 115px;
+      top: 115px;
     }
   }
   @media only screen and (max-width: 600px) {
     .programme-pavilion {
       margin: -50px -70px 0 -70px;
     }
+    .close {
+      left: 75px;
+      top: 60px;
+    }
   }
   @media only screen and (max-width: 400px) {
     .programme-pavilion {
       margin: -50px -50px 0 -50px;
+    }
+    .close {
+      left: 55px;
+      top: 60px;
     }
   }
 </style>
@@ -60,11 +105,12 @@
 
 
   <!-- ეს popup, რა კონტეინერშიც ჩასვავ იმხელა იქნება -->
+
   <div class="programme-pavilion">
+    <div class="close"></div>
     <img src="Reflected-Pavilion.png" alt="Reflected Pavilion">
     <?xml version="1.0" encoding="utf-8"?>
-    <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
     viewBox="0 0 1003.7 702" style="enable-background:new 0 0 1003.7 702;" xml:space="preserve">
     <style type="text/css">
     .st0{fill:#2100FF;opacity: 0;}
@@ -76,7 +122,7 @@
       <rect x="314.9" y="309.8" class="st0" width="19.4" height="19.4"/>
     </a>
     <a href="https://miesbcn.com/project/jordi-bernado-second-reconstruction/" target="_blank">
-      <rect x="432.4" y="309.8" class="st0" width="19.4" height="19.4"/>
+      <rect x="433" y="309.8" class="st0" width="19.4" height="19.4"/>
     </a>
 
 
